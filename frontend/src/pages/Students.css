@@ -1,0 +1,60 @@
+.students-page {
+  padding: 2rem 0;
+}
+
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.students-header h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.search-bar {
+  margin-bottom: 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.no-students {
+  text-align: center;
+  color: #6b7280;
+  padding: 3rem;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .students-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
